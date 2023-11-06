@@ -12,11 +12,11 @@ public class ReverseWord {
     }
 
     public static String reverseString(String input) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for(int i = input.length() -1 ; i > -1; i--){
-            output = output + input.charAt(i);
+            output.append(input.charAt(i));
         }
-        return output;
+        return output.toString();
     }
 
 }
